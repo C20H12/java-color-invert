@@ -240,7 +240,7 @@ public class MainFrame extends JFrame {
 
   private String toPaddedHexString(int in) {
     // pad the hex so 0 - 9 is like 00 - 09
-    if (in < 10) {
+    if (in < 16) {
       return "0" + Integer.toHexString(in);
     }
     return Integer.toHexString(in);
